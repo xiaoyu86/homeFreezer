@@ -1,16 +1,25 @@
 /**
-  全局配色变量
+  全局
  */
 
-
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+   pxToRem 设计图px 转rem
+   使用场景：设计图量图的px
+  */
+@function pxToRem($px) {
+  @return $px /2/12 * 1rem;
+}
 
 /**
-   HomeFreezer 配色
- */
-$theme-color: #55a8fd;
-$theme-color-blue: #55a8fd;
-$theme-color-yellow: #ffbc3c;
-$theme-color-red: #ff5a5a;
+ionicPxToRem ionicPx 转rem
+使用场景：ionic在web调试器中的px
+*/
+@function ionicPxToRem($px) {
+  @return $px/12 * 1rem;
+}
+
+
+
+
+

@@ -1,9 +1,10 @@
 import {Component} from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 import {Storage} from '@ionic/storage';
 
 
+@IonicPage
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -25,7 +26,7 @@ export class HomePage {
 
 
     // 初始化
-    storage.get('foodInfo').then((val) => {
+    this.storage.get('foodInfo').then((val) => {
       console.log('Your age is', val);
     });
 
