@@ -3,21 +3,9 @@
  */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/**
-   pxToRem 设计图px 转rem
-   使用场景：设计图量图的px
-  */
-@function pxToRem($px) {
-  @return $px /2/12 * 1rem;
-}
 
-/**
-ionicPxToRem ionicPx 转rem
-使用场景：ionic在web调试器中的px
-*/
-@function ionicPxToRem($px) {
-  @return $px/12 * 1rem;
-}
+//skin 主题配色
+@import "skin/homeFreezer";
 
 
 

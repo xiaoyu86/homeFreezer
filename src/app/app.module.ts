@@ -13,12 +13,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicStorageModule } from '@ionic/storage';
 
+// 页面组件
+import {HomePageModule} from "../pages/home/home.module";
+import {FoodEditPageModule} from "../pages/food-edit/food-edit.module";
+
+
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+/*    AboutPage,
     ContactPage,
-    HomePage,
+    HomePage,*/
     TabsPage
   ],
   imports: [
@@ -27,20 +32,25 @@ import { IonicStorageModule } from '@ionic/storage';
       backButtonText: '返回', // 配置返回按钮的文字
       // backButtonIcon: 'arrow-dropleft-circle' // 配置返回按钮的图标
     }),
-    IonicStorageModule.forRoot()//缓存服务
+    IonicStorageModule.forRoot(),//缓存服务
+
+    // 页面模块
+    HomePageModule,
+    FoodEditPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+/*    AboutPage,
     ContactPage,
-    HomePage,
+    HomePage,*/
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    // BASEFUN,
   ]
 })
 export class AppModule {}

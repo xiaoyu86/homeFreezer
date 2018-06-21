@@ -3,8 +3,7 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 import {Storage} from '@ionic/storage';
 
-
-@IonicPage
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,8 +17,6 @@ export class HomePage {
   freshLevel3: number = 0;//过期数量
 // --------------------------------------------------
   // item 详情
-
-
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private storage: Storage) {

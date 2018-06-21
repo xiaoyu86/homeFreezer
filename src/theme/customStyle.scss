@@ -1,0 +1,62 @@
+/**
+  自定义样式
+ */
+
+
+/**
+  全局样式壳
+ */
+html {
+  body {
+    ion-app {
+      /**
+      工具类
+      */
+      @import "tool/function";
+      @import 'tool/layout';
+      @import 'tool/typeset';
+      @import 'tool/background';
+      @import 'tool/w3cbox';
+      @import 'tool/interactive';
+      @import 'tool/flex';
+      @import 'tool/img';
+      @import 'tool/scrollbar';
+      @import 'tool/boxshadow';
+      @import 'tool/other';
+      @import 'tool/temp';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      /**
+        ionic 复写
+       */
+      @import "ionic-reset/ion-list";
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      /**
+        自定义组件
+       */
+
+      /**
+        布局
+      */
+      .paddng-top-bottom-16 {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .paddng-left-right-16 {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+

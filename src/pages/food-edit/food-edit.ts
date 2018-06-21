@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 import {FoodInfoClass} from "../../project/class/food-info-class";
+import {BASEFUN} from "../../common/class/base-fun-class";
 
 /**
  * Generated class for the FoodEditPage page.
@@ -42,9 +43,9 @@ export class FoodEditPage {
 
     this.ComponentInfo.put(_data.data);
     //初始化 日期
-    this.ComponentInfo.createTime = this.ComponentInfo.createTime ? this.ComponentInfo.createTime : new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toISOString();
+    this.ComponentInfo.createTime = BASEFUN.DATE.msToDate(this.ComponentInfo.createTime ? this.ComponentInfo.createTime : new Date().getTime());
 
-    this.ComponentInfo.foodShelfLife = this.ComponentInfo.foodShelfLife ? this.ComponentInfo.foodShelfLife : new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toISOString();
+    this.ComponentInfo.foodShelfLife = BASEFUN.DATE.msToDate(this.ComponentInfo.foodShelfLife ? this.ComponentInfo.foodShelfLife : new Date().getTime());
   }
 
 
@@ -59,7 +60,7 @@ export class FoodEditPage {
 
   save() {
 
-    console.log(this.ComponentInfo)
+    console.log(this.ComponentInfo);
     this.navCtrl.popToRoot();
 
     /*    const _params = {actionType: this.actionType, data: this.ComponentInfo};

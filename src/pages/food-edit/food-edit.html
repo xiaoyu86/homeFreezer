@@ -6,9 +6,9 @@
 -->
 <ion-header>
   <ion-navbar>
-    <button ion-button clear small navPop style="padding: 0;">
-      <ion-icon name="arrow-dropleft" class="float-l" (click)="goback()"></ion-icon>
-    </button>
+<!--    <button ion-button clear small navPop class="float-l">
+      <ion-icon name="arrow-dropleft" (click)="goback()"></ion-icon>
+    </button>-->
 
     <ion-title>{{actionType}}食材</ion-title>
   </ion-navbar>
@@ -31,11 +31,13 @@
     </ion-item>
     <ion-item>
       <ion-label fixed>加入日期：</ion-label>
-      <ion-datetime displayFormat="YYYY MMM DD " pickerFormat="YYYY MMM DD" [(ngModel)]="ComponentInfo.createTime" cancelText="取消" doneText="确认"></ion-datetime>
+      <ion-datetime displayFormat="YYYY M DD " pickerFormat="YYYY M DD" [(ngModel)]="ComponentInfo.createTime"
+                    cancelText="取消" doneText="确认"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label fixed>保质期：</ion-label>
-      <ion-datetime displayFormat="YYYY MMM DD " pickerFormat="YYYY MMM DD" [(ngModel)]="ComponentInfo.foodShelfLife" cancelText="取消" doneText="确认"></ion-datetime>
+      <ion-datetime displayFormat="YYYY M DD " pickerFormat="YYYY M DD" [(ngModel)]="ComponentInfo.foodShelfLife"
+                    cancelText="取消" doneText="确认"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label fixed>备注:</ion-label>
