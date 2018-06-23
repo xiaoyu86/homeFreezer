@@ -1,0 +1,99 @@
+/**
+Box Shadow 阴影大全 2018.03.09
+ */
+
+.BSwhiteRooms {
+  /*box-shadow: 0 20px 40px 10px #e0e5ee;*/
+  box-shadow: 0 20px 40px 10px rgba(224, 239, 238, 0.2);
+}
+
+.BSblackSands {
+  /*box-shadow: 0 2px 5px 0 #000;*/
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.BSspaceHos {
+  /*box-shadow: 0 5px 10px 0 #000;*/
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.BSsafeGround {
+  /*box-shadow: 0 8px 14px 0 #e0e5ee;*/
+  box-shadow: 0 8px 14px 0 rgba(224, 239, 238, 0.50);
+}
+
+.BStheRip {
+  /*box-shadow: 0 0 50px 0 #000;*/
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.BSbadKingdom {
+  /*box-shadow: 0 0 30px 0 #8d979E;*/
+  box-shadow: 0 0 30px 0 rgba(141, 151, 158, 0.2);
+}
+
+.BScosmoCanyon {
+  /*box-shadow: 0 0 30px 0 #8d979e;*/
+  box-shadow: 0 0 30px 0 rgba(224, 239, 238, 0.2);
+}
+
+.BSbreakWell {
+  /*box-shadow: 20px 40px 60px 0 #000;*/
+  box-shadow: 20px 40px 60px 0 rgba(0, 0, 0, 0.1);
+}
+
+.BSburningBright {
+  /*box-shadow: 0 3px 90px 0 #000;*/
+  box-shadow: 0 3px 90px 0 rgba(0, 0, 0, 0.4);
+}
+
+.BScustom1 {
+  box-shadow: 0 3px 30px 0 rgba(45, 40, 40, 0.3);
+}
+
+/**
+Box Shadow 描边 阴影 2018.03.09
+ */
+.shadow-y {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+.shadow-x {
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2)
+}
+
+.shadow-x-y {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+.shadow {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2)
+}
+
+/**
+Box Shadow 常用 阴影 2018.03.09
+ */
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+  0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.shadow-lg {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+  0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.shadow-inner {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-none {
+  box-shadow: none;
+}
+
+
+

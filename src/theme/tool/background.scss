@@ -1,0 +1,159 @@
+/**
+ * Author: wangshuai
+ * Create Time: 2018-03-09 14:09
+ * Description: background 背景：Background Attachment、background-position、Background Repeat 、background-size
+ */
+
+/**
+  Background-color 背景图固定
+ */
+.bg-SkinPrimaryColor, .bg-theme {
+  background-color: $skin-primary-color !important;
+}
+
+.bg-blue {
+  background-color: $skin-blue-color !important;
+}
+
+.bg-white {
+  background-color: $skin-white-color !important;
+}
+
+.bg-red {
+  background-color: $skin-red-color !important;
+}
+
+.bg-orange {
+  background-color: $skin-orange-color !important;
+}
+
+.bg-yellow {
+  background-color: $skin-yellow-color !important;
+}
+
+.bg-green {
+  background-color: $skin-green-color !important;
+}
+
+.bg-purple {
+  background-color: $skin-purple-color !important;
+}
+
+.bg-gray {
+  background-color: $skin-gray-color !important;
+}
+
+.bg-background {
+  background-color: $skin-white-color !important;
+}
+
+///////////////////////////////////////////////
+.info-background-color {
+  background-color: $infoColor !important;
+}
+
+.warning-background-color {
+  background-color: $warningColor !important;
+}
+
+.success-background-color {
+  background-color: $successColor !important;
+}
+
+.danger-background-color {
+  background-color: $dangerColor !important;
+}
+
+/**
+  Background Attachment 背景图固定
+ */
+//不跟随滚动条移动
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+// TODO 背景随元素内容滚动而滚动了
+.bg-local {
+  background-attachment: local;
+}
+
+// 背景随元素内容滚动而滚动了
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  background-position 背景图定位
+ */
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
+}
+
+.bg-left-top {
+  background-position: left top;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  Background Repeat 背景重复
+ */
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  background-size 背景尺寸
+ */
+// 扩展背景图 超出区域不显示
+.bg-cover {
+  background-size: cover;
+}
+
+// 按比例缩放到合适大小
+.bg-contain {
+  background-size: contain;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
