@@ -15,6 +15,7 @@ export class TabsPage {
   tab3Root = ContactPage;
 
   constructor() {
-
+    console.log('tabs constructor')
   }
+
 }

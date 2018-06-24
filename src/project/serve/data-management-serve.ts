@@ -1,10 +1,11 @@
-import {FoodInfoClass} from "../class/food-info-class";
+import {Injectable} from "@angular/core";
 
 
-class DataManagementServe {
+@Injectable()
+export class DataManagementServe {
   obj;
 
-  constructor(dataTypeName) {
+  constructor() {
 
   }
 
@@ -18,6 +19,7 @@ class DataManagementServe {
     } else {
       this.obj[data.id] = data;
     }
+    return this.obj
   }
 
 
@@ -34,6 +36,7 @@ class DataManagementServe {
     } else {
       this.obj = {};
     }
+    return this.obj
   }
 
 
@@ -58,7 +61,7 @@ class DataManagementServe {
 
 
   put(data) {
-    this.create(data)
+    return this.create(data)
   }
 
 

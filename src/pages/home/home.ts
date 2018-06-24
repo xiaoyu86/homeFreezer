@@ -1,7 +1,9 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, ModalController, Events} from 'ionic-angular';
 
-import {Storage} from '@ionic/storage';
+
+import {FoodEditPage} from "../food-edit/food-edit";
+import {FoodInfoServe} from "../../project/serve/food-info-serve";
 
 @IonicPage()
 @Component({
@@ -9,28 +11,27 @@ import {Storage} from '@ionic/storage';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  foodInfo;
+
+
   //card
   foodNum: number = 0;//总数
 
   freshLevel1: number = 0;//新鲜数量
   freshLevel2: number = 0;//一般数量
   freshLevel3: number = 0;//过期数量
+
+
+  callbackData;
 // --------------------------------------------------
   // item 详情
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private storage: Storage) {
+              private modalCtrl: ModalController,
+              private foodInfoServe:FoodInfoServe,
+              private events: Events) {
 
-
-    // 初始化
-    this.storage.get('foodInfo').then((val) => {
-      console.log('Your age is', val);
-    });
-
-
-    // set a key/value
-    // storage.set('name', 'Max');
-
+    this.FoodInfoInit();
 
   }
 
@@ -38,9 +39,24 @@ export class HomePage {
     console.log('ionViewDidLoad homepage');
   }
 
+
+  FoodInfoInit() {
+    this.foodInfo = this.foodInfoServe.get(null);
+  }
+
+
+  // modal
   foodAdd() {
     const _params = {actionType: 'C'};
-    this.navCtrl.push('FoodEditPage', _params);
+    let presentPageModal = this.modalCtrl.create(FoodEditPage, {presentDate: _params});
+    presentPageModal.onDidDismiss(data => {
+      console.log('接收页面回调: ' + data);
+
+      // 取出回调的值
+      this.callbackData = data
+    });
+    presentPageModal.present()
   }
+
 
 }
