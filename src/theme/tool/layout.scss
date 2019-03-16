@@ -1,0 +1,260 @@
+/**
+ * Author: wangshuai
+ * Create Time: 2018-03-09 13:42
+ * Description: layout 布局：Display、Float、Overflow 、Position、visibility
+ */
+
+/**
+  Display 元素应该生成的框的类型 盒子类型
+ */
+//显示
+.show {
+  display: block;
+}
+
+//隐藏 不占文档流位置
+.hidden {
+  display: none;
+}
+
+.block, .display-block {
+  display: block;
+}
+
+.inline-block, .display-inline-block {
+  display: inline-block !important
+}
+
+.inline, .display-inline {
+  display: inline !important
+}
+
+//按table显示
+.display-table {
+  display: table
+}
+
+/*.table {
+  display: table
+}*/
+
+//按tr显示
+.table-row, .display-table-row {
+  display: table-row
+}
+
+//按td显示
+.table-cell, .display-table-cell {
+  display: table-cell
+}
+
+// flex盒子布局
+.flex，display-flex {
+  display: flex
+}
+
+//无换行符 且长度按照内部元素获取
+.inline-flex，inline-flex-display {
+  display: inline-flex
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  Floats 浮动
+ */
+.float-right, .float-r {
+  float: right;
+}
+
+.float-left, .float-l {
+  float: left;
+}
+
+.float-none, .float-n {
+  float: none;
+}
+
+//清除浮动
+.clearfix {
+  clear: both;
+  /* IE 6/7 */
+  zoom: 1;
+}
+
+.clearfix:before, .container:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  Overflow 内容溢出元素框时发生的事情
+ */
+// 元素不隐藏 溢出父元素可见  默认
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-scroll, .overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-scroll, .overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+////////////////////////////////////
+//app 滚动回弹效果，当手指从触摸屏上移开，内容会保持一段时间的滚动效果，继续滚动的速度和持续的时间和滚动手势的强烈程度成正比。
+.scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+//app 当手指从触摸屏上移开，滚动会立即停止
+.scrolling-auto {
+  -webkit-overflow-scrolling: auto;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  定位
+ */
+.static {
+  position: static;
+}
+
+.fixed, .position-f {
+  position: fixed;
+}
+
+.absolute, .position-a {
+  position: absolute;
+}
+
+.relative, .position-r {
+  position: relative;
+}
+
+.pin-t {
+  top: 0;
+}
+
+.pin-r {
+  right: 0;
+}
+
+.pin-b {
+  bottom: 0;
+}
+
+.pin-l {
+  left: 0;
+}
+
+.pin-y {
+  top: 0;
+  bottom: 0;
+}
+
+.pin-x {
+  right: 0;
+  left: 0;
+}
+
+.pin {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pin-none {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  visibility 元素是否可见 注意与display的区别
+ */
+// 可见且 占据文档流的位置
+.visible {
+  visibility: visible;
+}
+
+// 不可见 占据文档流的位置
+.invisible {
+  visibility: hidden;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  z-index z轴
+ */
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//居中类样式
+//未知子元素与父容器高度
+.verticalcenter-absolute {
+  position: relative;
+}
+
+.verticalcenter-absolute-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+//已知父元素高度 且只有一个元素
+.verticalcenter, .verticalcenter-relative {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.verticalcenter-flex {
+  display: flex; /*Flex布局*/
+  display: -webkit-flex; /* Safari */
+  align-items: center; /*指定垂直居中*/
+}
+
+//td内容垂直居中
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+//固定宽度的居中布局 水平居中
+.wrap-center {
+  width: 800px;
+  margin: 0 auto;
+}
+

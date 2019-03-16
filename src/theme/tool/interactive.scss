@@ -1,0 +1,82 @@
+/**
+ * Author: wangshuai
+ * Create Time: 2018-03-09 16:04
+ * Description: interactive 交互：Cursor、Pointer Events、Resize、User Select
+ */
+
+/**
+  Cursor 鼠标手势
+ */
+
+//箭头 默认
+.cursor-auto {
+  cursor: auto;
+}
+
+//手型
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//禁用
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/**
+  Pointer Events 鼠标事件（点击）
+ */
+//禁用 鼠标会穿透点击到下层
+.pointer-events-none {
+  pointer-events: none;
+}
+
+//正常
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+/**
+Resize 调整元素尺寸
+*/
+.resize-none {
+  resize: none;
+}
+
+.resize {
+  resize: both;
+  overflow: auto;
+}
+
+.resize-y {
+  resize: vertical;
+}
+
+.resize-x {
+  resize: horizontal;
+}
+
+/**
+User Select 用户选择
+*/
+//文本不能被选中
+.select-none {
+  user-select: none;
+}
+
+//可以选中文本
+.select-text {
+  user-select: text;
+}
+
+//选中文字 颜色改变
+::selection {
+  background-color: $skin-primary-color;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: $skin-primary-color;
+  color: #fff;
+}

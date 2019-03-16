@@ -1,0 +1,50 @@
+/**
+ * Author: wangshuai
+ * Create Time: 2018-03-09 16:10
+ * Description: Appearance、opacity、SVG
+ */
+
+/**
+Appearance 浏览器渲染风格
+ */
+//禁用默认风格
+.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+//变更为列表内容风格
+.appearance-listitem {
+  -webkit-appearance: listitem;
+  -moz-appearance: listitem;
+}
+
+/**
+opacity 不透明度
+ */
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-50 {
+  opacity: .5;
+}
+
+.opacity-70 {
+  opacity: .7;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+/**
+  SVG  currentColor 集成color的颜色
+ */
+.fill-current {
+  fill: currentColor;
+}
+
+.stroke-current {
+  stroke: currentColor
+}

@@ -1,0 +1,156 @@
+/**
+   全局变量配置
+ */
+// 项目配置前缀名
+$prefix-name: m2;
+
+//主色 换一整套的颜色
+$skin-primary-color: #55a8fd;
+
+//颜色
+$skin-red-color: #ff5a5a;
+$skin-yellow-color: #ffbc3c;
+$skin-blue-color: #55a8fd;//#0098ff
+$skin-green-color: #32db64;
+$skin-gray-color: #555;
+$skin-white-color: #fff;
+$skin-black-color: black;
+
+$skin-orange-color: #fb9f28;
+$skin-purple-color:purple;
+
+
+//使用场景配色
+$textColor: #545454; //默认文字颜色
+$infoColor: $skin-purple-color;
+$successColor: $skin-green-color;
+$warningColor: $skin-orange-color;
+$dangerColor: $skin-red-color;
+
+$red: #ed5565;
+
+//选中文字颜色及背景配置
+$selectionBgcolor: rgb(235, 247, 255);
+
+//lightness($color);  // 取颜色的明度
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//工具类
+//透明度转换函数
+@mixin semi-transparent-colors($attribute,$color,$background) {
+  $percent: alpha($color) * 100%; //获取颜色透明度值，并转换成百分比
+  $opaque: opacify($color, 1); //使颜色不透明
+  $solid-color: mix($opaque, $background, $percent);
+  //#{$attribute}: $solid-color; //设置不透明的颜色，为不支持rgba颜色的浏览器服务
+  //#{$attribute}: $color;//设置透明颜色，为支持rgba颜色的浏览器服务 }著作权归作者所有。
+}
+
+// 主颜色明度配色
+$skin-primary-color-lighten: lighten($skin-primary-color, 10%); //提升明度
+$skin-primary-color-darken: darken($skin-primary-color, 10%); //降低明度
+$skin-primary-color-mask: rgba(0, 152, 255, 0.6);
+$skin-primary-color-maskbg: #66c1ff;
+$skin-primary-colorHover: $skin-primary-color-lighten;
+$skin-primary-colorActive: $skin-primary-color-darken;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//响应式设计 主框架 字体默认值
+$htmlFontSize: 10; //ionic换算比例为1
+
+//系统中最常见的文字大小
+$fontSizeBase: 12;
+
+//系统中的rem1 等同于1px
+$px: 1rem/$htmlFontSize;
+
+//纵向间距 1x：8px，2x：16px，3px：24px
+$verticalDistance1X: 8*$px; //8px;
+$verticalDistance2X: 16*$px; //16px;
+$verticalDistance3X: 24*$px; //24px;
+
+//通用圆角配置
+$border-radius: 3*$px; //3px;
+
+$input-width: 200*$px; //200px;
+$input-height: 30*$px; //30px;
+$input-border-color: #d9d9d9;
+$input-border-color-focus: $skin-primary-color-lighten;
+
+/******
+  zindex 说明
+  1-99
+  100-199 右边布局内容
+  200-299 左边布局内容
+  300-399 底部信息
+  400-499 顶部
+  500+
+******/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//leftnav
+$leftnavWidth: 200px;
+
+//footer
+$footerHeight: 30px;
+
+//ico颜色
+//$icoColor:#91A8B0;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font-family
+$font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+             SimSun, sans-serif;';
+
+$font-family-no-number: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//$font-family: "Helvetica Neue For Number", $font-family-no-number;//ant 自带配置名
+$font-family-number: "Helvetica Neue For Number", $font-family-no-number;
+
+$code-family: Consolas, Menlo, Courier, monospace;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$color-theme: $skin-primary-color; //主体系
+
+/*伪类常用颜色*/
+$color-hover: $skin-primary-colorHover; // 鼠标悬浮
+$color-active: $skin-primary-colorActive; //激活
+
+/*文字颜色*/
+$color-text: $textColor;
+$tab-title-color: #666;
+$placeholder-color: #cccccc;
+$label-color: #808080;
+
+$color-text-l: #333333; //一级标题
+$color-text-m: #666666; //二级标题
+$color-text-s: #999999; //三级标题
+
+/*线颜色 Border color*/
+$border-color-base: #dddddd;
+
+//背景颜色
+$background-color-base: #f9f9f9; //#f7f7f7
+$background-color-active: #eee; //#eee
+
+// 滚动条配色
+$scrollbarColor: rgb(195, 195, 195); //#a3a4a6;
+
+// 阴影
+$box-shadow: 0 0 6px #333;
+
+//layout
+$layout-header-background: $skin-primary-color;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+  ionic 配色
+ */
+$primary: $skin-primary-color;
+$secondary: $skin-green-color;
+$danger: $skin-red-color;
+$light: #f4f4f4;
+$dark: #222;
+
+
+
+
+

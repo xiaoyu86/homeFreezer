@@ -1,0 +1,47 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      HomeFreezer
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content>
+  <ion-list class="ion-list">
+    <ion-list-header class="paddng-left-right-16">
+      HomeFreezer
+      <ion-icon name="funnel" class="float-r"></ion-icon>
+    </ion-list-header>
+  </ion-list>
+
+
+  <div class="page-home-cards">
+    <i class="fas fa-camera-retro"></i>食材数量 {{foodNum}}
+  </div>
+
+
+  <div class="div-table">
+    <div>
+      <div>新鲜{{freshLevel1}}</div>
+      <div></div>
+      <div>一般{{freshLevel2}}</div>
+      <div></div>
+      <div>过期{{freshLevel3}}</div>
+    </div>
+  </div>
+
+
+  <div>
+
+
+  </div>
+
+
+  <ion-fab right bottom>
+    <button ion-fab mini (click)="foodAdd()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+
+</ion-content>

@@ -1,0 +1,256 @@
+/**
+ * Author: wangshuai
+ * Create Time: 2018-03-09 15:25
+ * Description: w3cbox 标准盒子；top bottom left right margin padding border
+ */
+
+/**
+  自动生成脚本
+ */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////
+//常用百分比
+.top-50P {
+  top: 50%;
+}
+
+///////////////////////////////////////
+// margin
+.margin-0 {
+  margin: 0 !important;
+}
+
+.margin-top-80 {
+  margin-top: 80px !important;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ border 边框
+ */
+//border color
+
+//Border Style
+.border-solid {
+  border-style: solid;
+}
+
+//实线
+.border-dashed {
+  border-style: dashed;
+}
+
+//虚线
+.border-dotted {
+  border-style: dotted;
+}
+
+//点状边框
+.border-none {
+  border-style: none;
+}
+
+//Border Width
+.border-none {
+  border: none !important;
+}
+
+.border-top-none {
+  border-top: none !important;
+}
+
+.border-bottom-none {
+  border-bottom: none !important;
+}
+
+.border-right-none {
+  border-right: none !important;
+  border-right: none !important;
+}
+
+.border-left-none {
+  border-left: none !important;
+}
+
+.border-top-bottom-none {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.border-left-right-none {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+//Border Radius
+//无边框
+.rounded-none {
+  border-radius: 0;
+}
+
+//默认圆角
+.border-radius {
+  border-radius: $border-radius;
+}
+
+//让元素变成椭圆或圆
+.border-radius-50P {
+  border-radius: 50%;
+}
+
+/*边框*/
+.border {
+  border: $px solid $border-color-base !important;
+}
+
+.border-top {
+  border-top: $px solid $border-color-base !important;
+}
+
+.border-bottom {
+  border-bottom: $px solid $border-color-base !important;
+}
+
+.border-left {
+  border-left: $px solid $border-color-base !important;
+}
+
+.border-right {
+  border-right: $px solid $border-color-base !important;
+}
+
+.border-left-right {
+  border-left: $px solid $border-color-base !important;
+  border-right: $px solid $border-color-base !important;
+}
+
+.border-top-bottom {
+  border-top: $px solid $border-color-base !important;
+  border-bottom: $px solid $border-color-base !important;
+}
+
+@mixin border {
+  border: $px solid $border-color-base !important;
+}
+
+@mixin border-top {
+  border-top: $px solid $border-color-base !important;
+}
+
+@mixin border-bottom {
+  border-bottom: $px solid $border-color-base !important;
+}
+
+@mixin border-left {
+  border-left: $px solid $border-color-base !important;
+}
+
+@mixin border-right {
+  border-right: $px solid $border-color-base !important;
+}
+
+@mixin border-left-right {
+  border-left: $px solid $border-color-base !important;
+  border-right: $px solid $border-color-base !important;
+}
+
+@mixin border-top-bottom {
+  border-top: $px solid $border-color-base !important;
+  border-bottom: $px solid $border-color-base !important;
+}
+
+/*圆角*/
+@mixin border-radius($radius:5*$px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+///////////////////////////////////////
+.border-color-theme {
+  border-color: $skin-primary-color !important;
+}
+
+.border-color-blue {
+  border-color: $skin-blue-color !important;
+}
+
+.border-color-white {
+  border-color: $skin-white-color !important;
+}
+
+.border-color-red {
+  border-color: $skin-red-color !important;
+}
+
+.border-color-orange {
+  border-color: $skin-orange-color !important;
+}
+
+.border-color-yellow {
+  border-color: $skin-yellow-color !important;
+}
+
+.border-color-green {
+  border-color: $skin-green-color !important;
+}
+
+.border-color-purple {
+  border-color: $skin-purple-color !important;
+}
+
+.border-color-gray {
+  border-color: $skin-gray-color !important;
+}
+
+///////////////////////////////////////
+.info-border-color {
+  border-color: $infoColor !important;
+}
+
+.warning-border-color {
+  border-color: $warningColor !important;
+}
+
+.success-border-color {
+  border-color: $successColor !important;
+}
+
+.danger-border-color {
+  border-color: $dangerColor !important;
+}
+
+
+///////////////////////////////////////
+.fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.width100P, .w-full {
+  width: 100% !important;
+}
+
+.w-screen {
+  width: 100vw !important;
+}
+
+.height80P {
+  height: 80% !important;
+}
+
+.height100P, .h-full {
+  height: 100% !important;
+}
+
+.h-screen {
+  height: 100vh !important;
+}

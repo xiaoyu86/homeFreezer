@@ -1,0 +1,53 @@
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+//没有信息
+.emptyImg {
+  display: block;
+  width: 253px;
+  height: 281px;
+  margin: 20px auto;
+  background-image: url("/assets/imgs/empty.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.imgDiv {
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid #f3f3f3;
+  border-radius: 6px;
+  margin: 24px 0;
+
+  /*BSspaceHos*/
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+//图片滤镜效果
+.img-light {
+  filter: blur(6px) brightness(5);
+}
+
+.img-gray {
+  filter: grayscale(100%);
+}
+
+.img-white {
+  filter: grayscale(100%) brightness(100);
+}
+
+.img-black {
+  filter: grayscale(100%) brightness(-100);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//文件类型图标自定义
+
+/* pdfs */
+a[href$=".pdf"]{
+
+}
